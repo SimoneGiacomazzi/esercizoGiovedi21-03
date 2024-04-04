@@ -16,9 +16,8 @@
 
 /**
  * @brief Crea un processo figlio per eseguire un programma specificato con gli argomenti dati.
- * @param program Nome del programma da eseguire.
  * @param argument Array di stringhe degli argomenti del programma.
- * @return 0 se Ë il processo padre, -1 in caso di errore, non ritorna se Ë il processo figlio.
+ * @return 0 se √® il processo padre, -1 in caso di errore, non ritorna se √® il processo figlio.
  */
 int spawn(char program[], char* argument[]) {
     int pid;
@@ -45,7 +44,7 @@ int main(int argc, char* argv[]) {
     int n;
     char* arg[3];
     
-    // Verifica se il numero corretto di argomenti Ë stato fornito
+    // Verifica se il numero corretto di argomenti √® stato fornito
     if (argc != 3) {
         printf("Uso: %s file-origine file-destinazione\r\n", argv[0]);
         return 0;
@@ -75,7 +74,7 @@ int main(int argc, char* argv[]) {
         return 0;
     }
     
-    // Apre il file di origine per la lettura in modalit‡ binaria
+    // Apre il file di origine per la lettura in modalit√† binaria
     file = fopen(argv[1], "rb");
     if (file == NULL) {
         printf("Errore apertura file \"%s\"\r\n", argv[1]);
